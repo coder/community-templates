@@ -28,6 +28,7 @@ This template assumes you have AWS configuration and credentials stored in `/hom
 ## Architecture
 
 > **Note**
+>
 > This template is designed to be a starting point! Edit the Terraform to extend the template to support your use case.
 
 Each workspace using this template provisions the following resources:
