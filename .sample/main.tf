@@ -33,7 +33,7 @@ resource "null_resource" "fake-compute" {
   count = data.coder_workspace.me.transition == "start" ? 1 : 0
 
   provisioner "local-exec" {
-    command = "echo 🔊 ${data.coder_workspace.me.owner} has started a workspace named ${data.coder_workspace.me.name}. Template: TEMPLATE_NAME"
+    command = "echo 🔊 ${data.coder_workspace.me.owner} has started a workspace named ${data.coder_workspace.me.name}. Template: MODULE_NAME"
   }
 
   # Run the Coder agent init script on resources
