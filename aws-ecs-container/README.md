@@ -11,7 +11,7 @@ tags: [aws, container]
 
 Provision ECS containers as [Coder workspaces](https://coder.com/docs/coder-v2/latest) with this example template.
 
-![../.images/aws-ecs-container.img](AWS ECS and Coder)
+![../.images/aws-ecs-container.png](AWS ECS and Coder)
 
 ## Prerequisites
 
