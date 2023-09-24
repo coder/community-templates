@@ -23,6 +23,11 @@ resource "coder_agent" "dev1" {
   auth = "token"
 }
 
+# Add a web IDE
+module "code-server" {
+  source   = "https://registry.coder.com/modules/code-server"
+  agent_id = coder_agent.dev1.id
+}
 resource "null_resource" "fake-compute" {
   # When a workspace is stopped, this resource is destroyed.
   count = data.coder_workspace.me.transition == "start" ? 1 : 0
@@ -42,12 +47,4 @@ resource "null_resource" "fake-compute" {
 resource "null_resource" "fake-disk" {
   # This resource will remain even when workspaces are restarted.
   count = 1
-}
-
-resource "coder_app" "fake-app" {
-  # Access :8080 in the workspace from the Coder dashboard.
-  name     = "VS Code"
-  icon     = "/icon/code.svg"
-  agent_id = coder_agent.dev1.id
-  url      = "http://localhost:8080"
 }

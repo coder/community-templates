@@ -4,10 +4,10 @@ description: Provision TEMPLATE_NAME as Coder workspaces
 icon: ../.icons/aws.svg
 maintainer_github: YOUR_GITHUB_USERNAME
 verified: false
-tags: [community]
+# tags: [aws, container]
 ---
 
-# Cloud Development with TEMPLATE_NAME
+# <Cloud/Remote> Development with TEMPLATE_NAME
 
 Provision TEMPLATE_NAME as [Coder workspaces](https://coder.com/docs/coder-v2/latest) with this example template.
 

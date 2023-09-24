@@ -4,7 +4,7 @@ description: Provision ECS containers as Coder workspaces
 icon: ../.icons/aws.svg
 maintainer_github: ericpaulsen
 verified: false
-tags: [community]
+tags: [aws, container]
 ---
 
 # Cloud Development with AWS Elastic Container Service (ECS)
@@ -24,7 +24,6 @@ This template assumes you have already [created an ECS cluster](https://docs.aws
 ### Authentication
 
 This template assumes you have AWS configuration and credentials stored in `/home/coder/.aws` on the server. To use another authentication method, edit the template to use a different [authentication method](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration).
-
 
 ## Architecture
 
