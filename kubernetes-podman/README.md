@@ -19,7 +19,8 @@ Provision Kubernetes Pods as [Coder workspaces](https://coder.com/docs/coder-v2/
 
 **Cluster**: This template requires an existing Kubernetes cluster See [Shortcomings of Rootless Podman](https://github.com/containers/podman/blob/main/rootless.md) to see OS and Kernel requirements.
 
-> **Note** > `smart-device-manager` must also be installed on your cluster. See our [Rootless Podman Documentation](https://coder.com/docs/v2/latest/templates/docker-in-workspaces#rootless-podman) for more details.
+> **Note**
+> The `smart-device-manager` plugin must also be installed on your cluster. See our [Rootless Podman Documentation](https://coder.com/docs/v2/latest/templates/docker-in-workspaces#rootless-podman) for more details.
 
 **Container Image**: This template uses [custom image](https://github.com/coder/community-templates/tree/main/kubernetes-podman/images) with rootless podman configured. To add additional tools, extend this image or build it yourself.
 
