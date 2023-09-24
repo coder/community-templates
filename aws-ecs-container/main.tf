@@ -10,7 +10,6 @@ terraform {
 }
 
 provider "coder" {
-  feature_use_managed_variables = true
 }
 
 variable "ecs-cluster" {
@@ -99,6 +98,13 @@ resource "aws_ecs_service" "workspace" {
   task_definition = aws_ecs_task_definition.workspace.arn
   # scale the service to zero when the workspace is stopped
   desired_count = data.coder_workspace.me.start_count
+
+  tags = {
+    coder          = "true"
+    owner          = data.coder_workspace.me.owner
+    workspace_name = data.coder_workspace.me.name
+  }
+
 }
 
 data "coder_workspace" "me" {}

@@ -11,7 +11,7 @@ tags: [aws, container]
 
 Provision ECS containers as [Coder workspaces](https://coder.com/docs/coder-v2/latest) with this example template.
 
-<!-- TODO: Add screenshot or demo GIF. Left: Coder "create workspace" flow. Right: AWS dashboard with containers -->
+![ECS workspace and dashboard](../.images/ecs.png)
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ This template assumes you have already [created an ECS cluster](https://docs.aws
 
 ### Authentication
 
-This template assumes you have AWS configuration and credentials stored in `/home/coder/.aws` on the server. To use another authentication method, edit the template to use a different [authentication method](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration).
+This template assumes you have AWS credentials stored in `/home/coder/.aws/credentials` on the server and a default region set in `/home/coder/.aws/config`. To use another authentication method, edit the template to use a different [authentication method](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration).
 
 ## Architecture
 
