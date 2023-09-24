@@ -27,6 +27,9 @@ There are several prerequisites before you can import this template into your Co
 
 ## Architecture
 
+> **Note**
+> This template is designed to be a starting point! Edit the Terraform to extend the template to support your use case.
+
 <!-- Which resources are provisioned as a part of this template? -->
 
 <!-- Which resources (and workspace directories) are persisted? Which are ephemeral? -->
