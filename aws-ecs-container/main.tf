@@ -108,7 +108,6 @@ resource "coder_agent" "coder" {
   auth                   = "token"
   os                     = "linux"
   dir                    = "/home/coder"
-  startup_script_timeout = 180
   startup_script         = <<-EOT
     set -e
 
